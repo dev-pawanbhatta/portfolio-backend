@@ -1,0 +1,107 @@
+aside.sidebar {
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+    margin-left: -250px;
+    transition: 1.2s;
+    z-index: 100;
+}
+
+aside.sidebar.active {
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+    margin-left: 0px;
+}
+
+aside.sidebar .sidebar-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+aside.sidebar .sidebar-header a {
+    text-decoration: none;
+    color: #000000CA;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000000CA;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link:hover {
+    background-color: #b2afaf;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link span:first-child i {
+    margin-right: 0.3rem;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link+.menu {
+    display: none;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link+.menu.show {
+    display: block;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link {
+    padding: 0.8rem 2.6rem;
+    display: block;
+    text-decoration: none;
+    color: #000000CA;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link:hover {
+    background-color: #b2afaf;
+}
+
+.navbar-container {
+    margin-left: 250px;
+    padding: 1rem;
+    transition: 1.2s;
+}
+
+.navbar-container.expand {
+    padding: 1rem;
+    margin-left: 0px;
+}
+
+.navbar-container .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-container .navbar-wrapper .search-box input {
+    height: 30px !important;
+}
+
+.navbar-container .navbar-wrapper .search-box button {
+    border: 1px solid !important;
+}
+
+.content {
+    min-height: calc(100vh - 56px);
+    background-color: #f5f2f2;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container .navbar-wrapper .search-box {
+        display: none;
+    }
+
+    .navbar-container {
+        margin-left: 0px;
+        padding: 1rem;
+    }
+
+    .navbar-container .navbar-wrapper .side-toggle-icon span {
+        display: none;
+    }
+}
