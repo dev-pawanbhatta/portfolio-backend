@@ -27,7 +27,7 @@ elements.forEach(element => {
 const element = document.getElementsByClassName('hamburger-btn')[0];
 element.addEventListener('click', (e) => {
     document.getElementsByClassName('sidebar')[0].classList.toggle('active');
-    document.getElementsByClassName('navbar-container')[0].classList.toggle('expand');
+    document.getElementsByClassName('content-wrapper')[0].classList.toggle('expand');
 })
 
 //Hide Sidebar
@@ -35,7 +35,7 @@ document.getElementsByClassName('content')[0].addEventListener('click', () => {
     const width = window.innerWidth;;
     if (width <= 768) {
         document.getElementsByClassName('sidebar')[0].classList.remove('active');
-        document.getElementsByClassName('navbar-container')[0].classList.add('expand');
+        document.getElementsByClassName('content-wrapper')[0].classList.add('expand');
     }
 })
 
@@ -43,5 +43,5 @@ document.getElementsByClassName('content')[0].addEventListener('click', () => {
 const width = window.innerWidth;
 if (width <= 768) {
     document.getElementsByClassName('sidebar')[0].classList.remove('active');
-    document.getElementsByClassName('navbar-container')[0].classList.add('expand');
+    document.getElementsByClassName('content-wrapper')[0].classList.add('expand');
 }

@@ -14,7 +14,7 @@
         <div class="content-wrapper">
             @include('admin.layouts.navbar')
             <div class="content">
-                <div class="container-fluid">
+                <div class="p-3">
                     @yield('content')
                 </div>
             </div>

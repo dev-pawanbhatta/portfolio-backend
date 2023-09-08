@@ -2,3 +2,12 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
 </script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script type="module" src="{{ asset('assets/js/chart.js') }}"></script>
+@php
+    $url = Request::url();
+@endphp
+<script>
+    const url = "{{ $url }}";
+</script>
+<script src="{{ asset('assets/js/sidebaractive.js') }}"></script>

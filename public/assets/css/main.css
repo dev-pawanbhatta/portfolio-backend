@@ -1,5 +1,5 @@
 aside.sidebar {
-    background-color: #ffffff;
+    background-color: #171717;
     height: 100vh;
     position: fixed;
     width: 250px;
@@ -9,7 +9,7 @@ aside.sidebar {
 }
 
 aside.sidebar.active {
-    background-color: #ffffff;
+    background-color: #171717;
     height: 100vh;
     position: fixed;
     width: 250px;
@@ -23,7 +23,7 @@ aside.sidebar .sidebar-header {
 
 aside.sidebar .sidebar-header a {
     text-decoration: none;
-    color: #000000CA;
+    color: #ffffffCA;
 }
 
 aside.sidebar .sidebar-body .side-item .side-link {
@@ -31,11 +31,15 @@ aside.sidebar .sidebar-body .side-item .side-link {
     justify-content: space-between;
     padding: 1rem;
     text-decoration: none;
-    color: #000000CA;
+    color: #ffffffCA;
 }
 
 aside.sidebar .sidebar-body .side-item .side-link:hover {
-    background-color: #b2afaf;
+    background-color: #222222;
+}
+
+aside.sidebar .sidebar-body .side-item .side-link.active {
+    background-color: #0e275f;
 }
 
 aside.sidebar .sidebar-body .side-item .side-link span:first-child i {
@@ -54,22 +58,29 @@ aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link {
     padding: 0.8rem 2.6rem;
     display: block;
     text-decoration: none;
-    color: #000000CA;
+    color: #ffffffCA;
 }
 
 aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link:hover {
-    background-color: #b2afaf;
+    background-color: #222222;
 }
 
-.navbar-container {
+aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link.active {
+    color: #2c6bf3;
+    font-weight: bold;
+}
+
+.content-wrapper {
     margin-left: 250px;
-    padding: 1rem;
     transition: 1.2s;
 }
 
-.navbar-container.expand {
-    padding: 1rem;
+.content-wrapper.expand {
     margin-left: 0px;
+}
+
+.content-wrapper .navbar-container {
+    padding: 1rem;
 }
 
 .navbar-container .navbar-wrapper {
@@ -96,9 +107,8 @@ aside.sidebar .sidebar-body .side-item .side-link+.menu .menu-link:hover {
         display: none;
     }
 
-    .navbar-container {
+    .content-wrapper {
         margin-left: 0px;
-        padding: 1rem;
     }
 
     .navbar-container .navbar-wrapper .side-toggle-icon span {
